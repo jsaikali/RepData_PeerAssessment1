@@ -124,7 +124,7 @@ stepsMedianImp<-round(median(agTotImp$steps),2)
 With imputed missing values, the mean number of total daily steps is 10765.64 and the median is 10762  
 
 ##### Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?)
-Prior to imputing, the mean was 10766.19 and the median is 10765. The difference is not drastic, but the histogram, mean, and median seem to reflect a lower number of steps. The histogram smoothed out a bit to a more bell-curve-type shape. Overall, the imputing missing values makes the data smoother and may give a more complete and whole picture, especially if there is a bias for intervals with missing values (for example, if intervals 0-20 are more likely to have missing values). In this case, each interval has exactly 8 missing values (as demonstrated below), so such a bias does not exist, but it is an important factor to take into account.
+Prior to imputing, the mean was 10766.19 and the median was 10765. The difference is not drastic, but the histogram, mean, and median seem to reflect a lower number of steps. The histogram smoothed out a bit to a more bell-curve-type shape. Overall, imputing missing values makes the data smoother and may give a more complete and whole picture, especially if there is a bias for intervals with missing values (for example, if intervals 0-20 are more likely to have missing values). In this case, each interval has exactly 8 missing values (as demonstrated below), so such a bias does not exist, but it is an important factor to take into account.
 
 ```r
 head(table(dataset[NAindeces,'interval']))
